@@ -1,0 +1,539 @@
+﻿html{
+	width:100%;
+	height:100%;
+	margin:auto;
+}
+
+body{
+	margin:0px;
+	padding:0px;
+	background:#ddd;
+	font-family:"Trebuchet MS", Arial, sans-serif;
+}
+
+div#ubBanner{
+	margin:0px;
+	padding:0px;
+	height:48px;
+    background:#CC0000;
+	box-shadow:0px 0px 0px #000;
+    position:fixed;
+    width:100%;
+    border-bottom-width:1px;
+    border-bottom-color:#fff;
+    border-bottom-style: solid;
+    z-index:1;
+}
+
+div#ubBanner div#ubLogo{
+	margin:0px;
+	padding:0px;
+	padding-top:7px;
+	padding-left:15px;
+	margin-left:auto;
+	margin-right:auto;
+	width:1020px;
+}
+
+div#ubSep{
+	margin:0px;
+	padding:0px;
+	padding-top:48px;
+	height:0px;
+	background:#ddd;
+}
+
+
+div#topBack{
+	margin:0px;
+	padding:0px;
+	margin-left:auto;
+	margin-right:auto;
+	width:1020px;
+	margin-top:0px;
+	
+	background:#444;
+	box-shadow:0px 0px 20px #000;
+	clear:both;
+	overflow:auto;
+    height:280px;
+}
+
+div#topBack div#header{
+	padding-left:30px;
+}
+
+div#topBack div#header div#leftImage{
+	margin-left:10px;
+	margin-right:20px;
+	margin-top:35px;
+    margin-bottom:30px;
+	width:200px;
+	float:left;
+}
+
+div#topBack div#header div#rightImage{
+	margin-left:190px;
+	margin-right:-200px;
+	margin-top:190px;
+	width:120px;
+	float:left;
+	
+}
+
+div#topBack div#header div#mainTitle{
+    margin-top:2px;
+	width:420px;
+	margin-right:10px;
+	padding-bottom:10px;
+	text-align:left;
+	float:left;
+	font-size:1.6em;
+	color:#fff;
+	/*color:#041A9B;*/
+}
+
+div#topBack div#header div#mainTitle a{
+	color:#fff;
+    text-align:left;
+	text-decoration:none;
+}
+
+
+/* Navigation Settings */
+nav {
+    box-shadow:0px 0px 0px #000;
+    margin:0px;
+    padding:0px;
+    margin-left:auto;
+    margin-right:auto;
+    width:1020px;
+    background:#CC0000;
+    height:48px;
+    clear:both;
+    z-index:1;
+}
+
+nav li {
+    list-style:none;
+    display:inline;
+    float:left;
+    width:145px;
+    text-align:center;
+}
+
+nav li a {
+    background:transparent;
+    float:left;
+    height:34px;
+    color:#fff;
+    text-decoration:none;
+    font-size:1em;
+    font-weight:bold;
+    padding-top:14px;
+    width:145px;
+    text-align:center;
+}
+
+nav li a:hover{
+    /*background:transparent url("./menu_hover.png") left repeat-x;*/
+    background:#000000;
+    color:#fff;
+}
+
+nav li a.selected { color:#fff;  text-decoration:none; background: #222; font-weight:bold;}
+
+nav li a.selected:hover { color:#fff;   text-decoration:none; background-color: #000000;  }
+
+.fixed {
+    position: fixed;
+    top: 49px;
+    height: 48px;
+    z-index: 1;
+    margin-left:auto;
+    margin-right:auto;
+    width:1020px;
+}
+
+div#menuBack{
+	margin:0px;
+	padding:0px;	
+	margin-top:0px;
+	margin-left:auto;
+	margin-right:auto;
+	width:1020px;
+	background:#444;
+	height:48px;
+	clear:both;
+	box-shadow:0px 0px 10px #000;
+}
+
+/*** Old navigation bar ****/
+/*
+div#menuBack ul.menu{
+	margin:0px;
+	padding:0px;
+	float:left;
+	list-style:none;
+	display:inline;
+	width:1020px;
+}
+
+div#menuBack ul.menu li{
+	list-style:none;
+	display:inline;
+	float:left;
+	width:170px;
+	text-align:center;
+}
+
+div#menuBack ul.menu li a{
+	background:transparent;
+	float:left;
+	height:34px;
+	color:#fff;
+	text-decoration:none;
+	font-size:1em;
+	font-weight:bold;
+	padding-top:14px;
+	width:170px;
+	text-align:center;
+}
+
+div#menuBack ul.menu li a:hover{
+	background:#E59319;
+	color:#fff;
+}
+
+div#menuBack ul.menu li a.selected { color:#fff;  text-decoration:none; background: #9EBA29; font-weight:normal;}
+
+div#menuBack ul.menu li a.selected:hover { color:#fff;   text-decoration:none; background-color: #E59319;  }
+
+*/
+
+
+/*** For Sub-menus ***/
+/*
+div#menuBack ul.menu ul
+{
+    display:none;
+    list-style:none;
+    top:34px;
+    position:absolute;
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+div#menuBack ul.menu li:hover > ul
+{
+    display:block;
+    z-index:100;
+    width:160px;
+    background-color:#Ef300C;
+}
+
+
+div#menuBack ul.menu li.submenu a{
+    background:transparent;
+    height:24px;
+    color:#FFF;
+    text-decoration:none;
+    font-size:0.85em;
+    font-weight:bold;
+	width:inherit;
+	background:transparent url("./submenu.png");
+	background:transparent url("./point_m.png") left repeat ;	
+}
+
+div#menuBack ul.menu li.submenu a:hover{
+    background:#a7a8aa;
+	color:#fff;
+}
+*/
+/*******/
+
+
+div#centerBack{
+	box-shadow:0px 0px 20px #000;
+	margin:0px;
+	padding:0px;	
+	margin-left:auto;
+	margin-right:auto;
+	width:1020px;
+	padding-top:0px;
+	margin-bottom:20px;
+	padding-bottom:10px;
+	background:#fff;
+	clear:both;
+}
+
+div#centerBack div#central{
+	margin-left:auto;
+	margin-right:auto;
+	width:1020px;
+	overflow:auto;	
+}
+
+
+div#central div#twitter{
+	margin-top: 50px;
+	margin-left: 0px;
+	margin-right:50px;
+	background:transparent;
+	width:200px;
+	float:right;
+	overflow: auto;
+}
+
+
+div#ubSep2{
+	margin:0px;
+	padding:0px;
+	padding-top:0px;
+	height:1px;
+	
+	background:#ddd;
+}
+
+div#centerBack div#peu{
+	margin:0px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0px;
+	padding-top:20px;
+	font-size:0.8em;
+	font-weight:normal;
+	color:black;
+	text-align:center;
+}
+
+
+table#person{
+    width:650px;
+    border:collapse;
+    border:0px;
+}
+
+table#person td{
+    padding:0px;
+    margin:0px;
+  
+}
+
+.photo{
+    background:#fff;
+    width:120px;
+    padding:0px;
+    margin:0px;
+}
+
+.title{
+    text-align:left;
+	font-weight:normal;
+    font-size:1em;
+	text-decoration:none;
+    vertical-align:top;
+}
+
+.a{
+    font-weight:normal;
+}
+
+
+div#slide{
+    padding-left:55px;
+    padding-right:55px;
+    padding-top:30px;
+    padding-bottom:30px;
+    margin-top:-30px;
+    vertical-align:middle;
+}
+
+div#slide p.title{
+    text-align:left;
+    font-weight:normal;
+    font-size:1em;
+    text-decoration:none;
+    vertical-align:top;
+}
+
+div#simpleText{
+	margin:0px;
+	margin-top:0px;
+	padding:0px;
+	padding-bottom:15px;
+	padding-top: 15px;
+	font-family:Arial, Verdana, Heveltica;
+	font-size:0.8em;
+	font-weight:normal;
+	color:black;
+	text-align:left;
+}
+
+div#simpleText a{
+    color: #006;
+	text-decoration:none;
+}
+
+
+
+div #newsBack{
+	margin:0px;
+	margin-top:0px;
+	padding:0px;
+	padding-bottom:15px;
+	padding-top: 0px;
+	padding-left: 25px;
+	padding-right: 35px;
+	font-size:0.8em;
+	font-weight:normal;
+	color:black;
+	text-align:left;
+}
+
+div #projectsMenu{
+	background:transparent;
+	margin:0px;
+	padding:0px;
+	padding-left:20px;
+	padding-top:45px;
+	width:160px;
+	float:left;	
+}
+
+div #projectsMenu ul{
+	background:transparent;
+	list-style:none;
+	margin:0px;
+	padding:0px;	
+}
+
+div #projectsMenu ul li{
+	margin-bottom:6px;
+	background:black;
+	padding:5px;
+	background:transparent url("./point_m.png") left repeat ;
+	/*background-color:#Ef300C;*/
+	display:block;
+}
+	
+div#projectsMenu ul li a{
+	font-size:0.8em;
+	text-decoration:none;	
+	color:white;	
+	font-weight:bold;
+	background:transparent;	
+	color:#FFFFFF;
+	display:block;
+}
+
+div#projectsMenu ul li:hover{
+	background:#a7a8aa;
+	color:#fff;
+	
+}
+
+div#projectBody{
+	background:transparent;
+	float:left;
+	margin-left:40px;
+	width:618px;
+	padding-right:30px;
+	font-size:0.8em;
+}
+
+div#projectBody p.title{ 
+	
+	color:#000;
+	font-size:xx-large;
+	padding-top:0px;
+	margin-top:20px;
+	font-weight:bold;
+}
+
+div#projectBody p.subtitle{ 
+	
+	color:#000;
+	font-size:x-large;
+	padding-top:0px;
+	margin-top:8px;
+	font-weight:bold;	
+}
+
+div#projectBody p.plaintext{
+	
+	color:black;
+
+}
+
+div#projectBody p.subsubtitle{
+	font-size:1.4em;
+	font-weight:bold;
+	color:#000;
+}
+
+div#central div#ubBody{
+	margin-left:40px;
+	margin-right: 0px;
+	padding-left:20px;
+	padding-right:20px;
+	background:transparent;
+	width:870px;
+	float:left;
+	overflow: auto;
+	font-size:0.9em;
+}
+
+div#ubBody p.title{ 
+	color:#000;
+	font-size:xx-large;
+	padding-top:30px;
+	margin-top:8px;
+	font-weight:bold;
+}
+
+div#ubBody p.subtitle{ 
+	color:#000;
+	font-size:x-large;
+	padding-top:0px;
+	margin-top:8px;
+	font-weight:bold;	
+}
+
+div#ubBody p.plaintext{
+		color:black;
+
+}
+
+div#ubBody p.subsubtitle{
+	font-size:1.4em;
+	font-weight:bold;
+    color:#000;
+}
+
+
+div#ad{
+	border:3px solid;
+	border-radius:2px;
+	border-style:solid none none none;
+	border-color:#041A9B white white white;
+	background:#D1D6F1;
+	padding:20px;
+	padding-top:5px;
+	margin-left:0px;
+	margin-right:0px;
+}
+
+div#ubBody div#ad p.subtitle{ 
+	color:black;
+	/*font-size:1.25em;*/
+	font-weight:bold;
+	margin-top:0px;
+}
+
+div#ubBody div#ad p.plaintext{
+	color:black;
+	/*font-size:0.75em;*/
+
+}

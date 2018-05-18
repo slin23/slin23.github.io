@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Restricted Area: ECE592-076"
+AuthUserFile /afs/unity.ncsu.edu/users/s/slin23/www/classes/.htpasswd
+Require valid-user
