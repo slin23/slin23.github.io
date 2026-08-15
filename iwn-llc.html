@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intelligent Wireless Networking, LLC</title>
+  <meta name="description" content="Intelligent Wireless Networking, LLC develops trustworthy AI, resilient networking, digital-twin, and autonomous-system technologies for scientific, industrial, and mission-critical applications." />
+  <style>
+    :root {
+      --navy: #0b1f3a;
+      --blue: #174a7e;
+      --teal: #1a7f78;
+      --light: #f5f8fb;
+      --text: #1f2937;
+      --muted: #64748b;
+      --white: #ffffff;
+      --border: #dbe4ee;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255,255,255,0.96);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(8px);
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      font-weight: 700;
+      color: var(--navy);
+      font-size: 1.05rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      padding: 92px 0 78px;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(26,127,120,.14), transparent 28%),
+        linear-gradient(135deg, #eef5fb 0%, #ffffff 55%, #f2fbfa 100%);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-weight: 700;
+      color: var(--teal);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-size: .82rem;
+      margin-bottom: 14px;
+    }
+
+    h1, h2, h3 {
+      color: var(--navy);
+      line-height: 1.2;
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 5vw, 4.6rem);
+      max-width: 900px;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      max-width: 820px;
+      font-size: 1.2rem;
+      color: #334155;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 700;
+      border: 1px solid var(--blue);
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: white;
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--blue);
+    }
+
+    section {
+      padding: 72px 0;
+    }
+
+    section.alt {
+      background: var(--light);
+    }
+
+    .section-lead {
+      max-width: 820px;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: #e8f6f4;
+      color: #146c66;
+      font-size: .78rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 42px;
+      align-items: start;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .contact-box {
+      border-left: 4px solid var(--teal);
+      padding: 20px 24px;
+      background: #f7fbfb;
+    }
+
+    footer {
+      background: var(--navy);
+      color: #dbeafe;
+      padding: 34px 0;
+      font-size: .9rem;
+    }
+
+    footer a {
+      color: white;
+    }
+
+    .small {
+      font-size: .88rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 820px) {
+      .grid, .two-col {
+        grid-template-columns: 1fr;
+      }
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 16px 0;
+      }
+      .hero {
+        padding-top: 64px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Intelligent Wireless Networking, LLC</div>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#technology">Technology</a>
+        <a href="#products">Products</a>
+        <a href="#applications">Applications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">Trustworthy AI • Resilient Networking • Autonomous Systems</span>
+        <h1>Building trusted intelligence for connected autonomous systems.</h1>
+        <p>
+          Intelligent Wireless Networking, LLC (iWN) develops software, algorithms, and validation tools
+          for resilient wireless networks, distributed edge intelligence, digital twins, and trustworthy
+          autonomous systems operating in dynamic and resource-constrained environments.
+        </p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="#products">Explore Products</a>
+          <a class="btn btn-secondary" href="#contact">Contact iWN</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container two-col">
+        <div>
+          <span class="eyebrow">About iWN</span>
+          <h2>From advanced research to deployable systems</h2>
+          <p>
+            iWN is a U.S.-based technology company focused on converting advanced research in
+            networking, AI, digital twins, and cyber-physical systems into deployable software and
+            validation capabilities for government, scientific, and industrial customers.
+          </p>
+          <p>
+            The company emphasizes platform-independent architectures, auditable decision-making,
+            robust operation under degraded conditions, and practical integration with existing
+            hardware and orchestration systems.
+          </p>
+        </div>
+        <div class="contact-box">
+          <strong>Core focus areas</strong>
+          <ul>
+            <li>Trustworthy and distributed AI</li>
+            <li>Resilient wireless and edge networking</li>
+            <li>Digital twins and hardware-in-the-loop validation</li>
+            <li>Multi-agent coordination and resource orchestration</li>
+            <li>Autonomous-system assurance and recovery</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="technology" class="alt">
+      <div class="container">
+        <span class="eyebrow">Technology</span>
+        <h2>Integrated trust, orchestration, and validation</h2>
+        <p class="section-lead">
+          iWN combines real-time sensing, network and resource awareness, machine-checkable planning,
+          digital-twin validation, and replayable evidence to improve the reliability and scalability of
+          autonomous and AI-driven systems.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <span class="tag">Trust & Resilience</span>
+            <h3>TRUST-Core</h3>
+            <p>
+              A platform-agnostic runtime for confidence estimation, anomaly detection, resilient
+              collaboration, and evidence logging across RF, PNT, networking, and autonomous-system data.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="tag">Autonomous Laboratories</span>
+            <h3>TRUST-Lab</h3>
+            <p>
+              A verification and recovery layer for AI-driven laboratories that checks plan feasibility,
+              monitors instrument and infrastructure conditions, supports bounded recovery, and creates
+              auditable execution records.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="tag">Validation</span>
+            <h3>Digital-Twin & HIL Tooling</h3>
+            <p>
+              Scenario generation, fault injection, telemetry replay, and hardware-in-the-loop testing
+              for evaluating distributed AI, networked autonomy, and resilient cyber-physical systems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <span class="eyebrow">Product Strategy</span>
+        <h2>Software, integration, and validation offerings</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Runtime Software</h3>
+            <p>
+              Deployable software for trust estimation, orchestration, anomaly awareness, recovery,
+              resource coordination, and evidence capture.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Integration SDK</h3>
+            <p>
+              APIs, adapters, telemetry schemas, test harnesses, and reference integrations for
+              connecting iWN software with customer platforms and existing orchestration systems.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Validation-as-a-Service</h3>
+            <p>
+              Structured evaluation campaigns using simulation, digital twins, HIL, fault injection,
+              scenario replay, acceptance testing, and engineering support.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="applications" class="alt">
+      <div class="container">
+        <span class="eyebrow">Applications</span>
+        <h2>Target markets</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Scientific & Autonomous Laboratories</h3>
+            <p>AI-driven experimental workflows, scientific instruments, distributed sensing, and laboratory automation.</p>
+          </div>
+          <div class="card">
+            <h3>Semiconductor & Advanced Manufacturing</h3>
+            <p>Trusted AI workflows, intelligent tools, resilient industrial networking, validation, and process automation.</p>
+          </div>
+          <div class="card">
+            <h3>Uncrewed & Multi-Agent Systems</h3>
+            <p>RF/PNT resilience, degraded-communications coordination, swarm collaboration, and mission assurance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container two-col">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h2>Partner with iWN</h2>
+          <p>
+            iWN welcomes discussions with government agencies, national laboratories, research
+            organizations, semiconductor and manufacturing companies, platform integrators,
+            and scientific-instrument vendors.
+          </p>
+        </div>
+        <div class="contact-box">
+          <p><strong>Intelligent Wireless Networking, LLC</strong></p>
+          <p>Email: <a href="mailto:intelwirelnetw@gmail.com">intelwirelnetw@gmail.com</a></p>
+          <p>Research background: <a href="https://slin23.github.io/" target="_blank" rel="noopener">slin23.github.io</a></p>
+          <p class="small">
+            iWN is an independent U.S. small business. References to university research or facilities
+            indicate research background or separately approved collaborations and do not imply
+            university ownership or endorsement of iWN products.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Intelligent Wireless Networking, LLC. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
